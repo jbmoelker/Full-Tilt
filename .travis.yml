@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+node_js:
+- '4.2'
+cache:
+  directories:
+  - node_modules
+branches:
+  only:
+  - master
+notifications:
+  email: false
+before_script:
+- npm prune
+script:
+- npm run build
+after_script:
+- bash ./lib/deploy.sh
+env:
+  global:
+  - GH_USER: jbmoelker
+  - GH_REPO: Full-Tilt
+  - secure: UrWYnQMiEs81jq2Mrfl3Zij7w7rvPQBmC4RboDdjm+D+3CoHISV99SBPdHrl3opeQynHDIrDLJ49oUKXHsEsjHi6MEv+HXXtoX+4weUO+M8VyY40yBWQb+bcWxKR9FCDLlRuO77QC3QBImOPd1Ad8HTfLeybCPQsd/G5EQb7x+LoA89nNPgKSkzaL+b0e2X1S4CQ952cqsSWx2VtXUc+ZS/khmKhOT2bG6VBShhOFRYYtpahUP0Ven05X54xdc45wPxPKTSy9e/VUXLb5pv+aqogDPoa33lAdUwVOa87wDyTD6GPIhgvK8cGohT46besv53BAMvDK8MjwWB2NvJJGjG/oCQg7KAmtjnHp87N2Y2ST8CJIW1rore6aAWmZdoy4QuW533aXiA/n+Hrhrsf4P7y6MU2rPlncJSvNUiHX4b7NjKmsLaoUr2yr/jrrnwITvA41KoGX+mzOTPHN4j3J/Xwt+66JsOYRpXfJcqbh2M/W3XOm5vCn+ebWjAii7I3cnM+GuFgrS2lGyc+0JdiuwWj4fz70uMIDQ8rzR5DGGn1pFTKMgWazd55Oiyi6/L7jMia6chTP6LQPuDkOxaVWjmNLAtCkGVcII8QCQiZMkijmnhmn3F1GGkCroUkUWUIgLJDiyScNeG96S1zQdHqBgREDge8FyK/xFN943SnCIE=

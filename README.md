@@ -12,6 +12,7 @@ This library also provides all the functions necessary to convert between differ
 * [Installation](#installation)
 * [Usage](#usage)
 * [Documentation](https://github.com/richtr/Full-Tilt/wiki/Full-Tilt-API-Documentation)
+* [Live examples](https://jbmoelker.github.io/Full-Tilt/examples/)
 
 ## Installation ##
 
@@ -85,7 +86,7 @@ Here is a quick example of how to use Full Tilt:
 </script>
 ```
 
-Full [API documentation](https://github.com/richtr/Full-Tilt/wiki/Full-Tilt-API-Documentation) is available on the project wiki and [usage examples](https://github.com/richtr/Full-Tilt/tree/master/examples) are also provided.
+Full [API documentation](https://github.com/richtr/Full-Tilt/wiki/Full-Tilt-API-Documentation) is available on the project wiki and [usage examples](https://jbmoelker.github.io/Full-Tilt/examples/) are also provided.
 
 ## References ##
 
